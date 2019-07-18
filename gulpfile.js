@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('hello', function(done){
   console.log('hello from gulp');
@@ -8,7 +9,8 @@ gulp.task('hello', function(done){
 
 gulp.task('sass', function(){//task to compile sass to css
   return gulp.src('src/scss/*.scss')//source
-  .pipe(sass())//plugin
+  .pipe(sass())//gulp-sass plugin to compile sass to css
+  .pipe(autoprefixer())//gulp-autoprefixer plugin for vendor free css
   .pipe(gulp.dest('src/css'))//output
 });
 
