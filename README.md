@@ -5,6 +5,8 @@ Learning to Automate tasks using gulp4 for faster and more efficient development
 * Gulp4
 
 * Gulp-sass
+* Gulp-uglify
+* browserSync
 
 ## Authors
  Carlos Francisco Franco Roque
